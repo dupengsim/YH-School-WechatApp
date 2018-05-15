@@ -1,4 +1,5 @@
 <!--index.wxml-->
+<import src="dataCard-template/dataCard-template.wxml" />
 <view class="container">
   <swiper indicator-dots='{{indicator}}' autoplay='{{indicator}}' interval='{{interval}}' duration='{{duration}}' circular='{{indicator}}' indicator-active-color="#fff">
     <block wx:for="{{imgUrls}}">
@@ -37,65 +38,8 @@
     </view>
     <view class='data_box boxShadow'>
       <scroll-view scroll-x class='box_slide'>
-
-        <view class='data_item'>
-          <view class='data_item_title'>
-            <text class='data_item_type'>播音</text>
-            <text class='data_item_dir'>即兴评述</text>
-            <image class='data_item_icon' src='../../image/music.png'></image>
-          </view>
-          <view class='data_item_con'>
-            <text class='item_con_text'>作为播音员，日常需要很多的时间训练，下面就是？</text>
-            <view class='item_con_intro'>
-              <text class='item_con_pro'>春眠不觉晓</text>
-              <text class='item_con_date'>2018.05.09</text>
-            </view>
-          </view>
-        </view>
-         <view class='data_item'>
-          <view class='data_item_title'>
-            <text class='data_item_type'>播音</text>
-            <text class='data_item_dir'>即兴评述</text>
-            <image class='data_item_icon' src='../../image/music.png'></image>
-          </view>
-          <view class='data_item_con'>
-            <text class='item_con_text'>作为播音员，日常需要很多的时间训练，下面就是？</text>
-            <view class='item_con_intro'>
-              <text class='item_con_pro'>春眠不觉晓</text>
-              <text class='item_con_date'>2018.05.09</text>
-            </view>
-          </view>
-        </view>
-         <view class='data_item'>
-          <view class='data_item_title'>
-            <text class='data_item_type'>播音</text>
-            <text class='data_item_dir'>即兴评述</text>
-            <image class='data_item_icon' src='../../image/music.png'></image>
-          </view>
-          <view class='data_item_con'>
-            <text class='item_con_text'>作为播音员，日常需要很多的时间训练，下面就是？</text>
-            <view class='item_con_intro'>
-              <text class='item_con_pro'>春眠不觉晓</text>
-              <text class='item_con_date'>2018.05.09</text>
-            </view>
-          </view>
-        </view>
-         <view class='data_item'>
-          <view class='data_item_title'>
-            <text class='data_item_type'>播音</text>
-            <text class='data_item_dir'>即兴评述</text>
-            <image class='data_item_icon' src='../../image/music.png'></image>
-          </view>
-          <view class='data_item_con'>
-            <text class='item_con_text'>作为播音员，日常需要很多的时间训练，下面就是？</text>
-            <view class='item_con_intro'>
-              <text class='item_con_pro'>春眠不觉晓</text>
-              <text class='item_con_date'>2018.05.09</text>
-            </view>
-          </view>
-        </view>
+        <template is="dataCard-template" data="{{...newData}}" />
       </scroll-view>
-
     </view>
   </view>
 </view>

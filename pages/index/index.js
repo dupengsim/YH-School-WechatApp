@@ -1,3 +1,5 @@
+var newData = require("../../data/data.js");
+
 Page({
 
   /**
@@ -35,7 +37,8 @@ Page({
       }
     ];
     this.setData({
-      dynamicList:dynamicList
+      dynamicList:dynamicList,
+      newData:newData.newData
     });
   },
   /**
