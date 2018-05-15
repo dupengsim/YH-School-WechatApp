@@ -1,43 +1,42 @@
+// pages/academy/academy.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    imgUrls: [
-      '../../image/banner.png',
-      '../../image/banner.png',
-      '../../image/banner.png',
-      '../../image/banner.png',
-    ],
-    
-    indicator: true,
-    interval: 5000,
-    duration: 500
+    hotList: [
+      {
+        pic: '../../image/banner.png',
+        title: '玻璃棧道',
+        desc: '22W人去過'
+      }, {
+        pic: '../../image/banner.png',
+        title: '玻璃棧道',
+        desc: '22W人去過'
+      }, {
+        pic: '../../image/banner.png',
+        title: '玻璃棧道',
+        desc: '22W人去過'
+      }, {
+        pic: '../../image/banner.png',
+        title: '玻璃棧道',
+        desc: '22W人去過'
+      }, {
+        pic: '../../image/banner.png',
+        title: '玻璃棧道',
+        desc: '22W人去過'
+      }
+    ]
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    var dynamicList = [
-      {
-        Type: "简章",
-        text: "2018年艺考时间表及注意事项"
-      },
-      {
-        Type: "真题",
-        text: "高考政策改革、加分、调整、史上最全汇总"
-      },
-      {
-        Type: "测试",
-        text: "2018年九大美院校考时间出炉，你准备好了吗？"
-      }
-    ];
-    this.setData({
-      dynamicList:dynamicList
-    });
+
   },
+
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
@@ -49,7 +48,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-//去问驱蚊器我
+
   },
 
   /**

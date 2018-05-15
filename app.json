@@ -1,12 +1,48 @@
 {
-  "pages":[
+  "pages": [
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/academy/academy",
+    "pages/data/data",
+    "pages/question/question"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
+  "window": {
+    "backgroundColor": "#FFF",
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle":"black"
+    "navigationBarTitleText": "艺路帮",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar":{
+    "backgroundColor":"#FFF",
+    "color":"#666666",
+    "selectedColor":"#009FE7",
+    "borderStyle": "white",
+    "list":[
+      {
+        "selectedIconPath":"image/home_active.png",
+        "iconPath":"image/home.png",
+        "pagePath":"pages/index/index",
+        "text":"首页"
+      },
+      {
+        "selectedIconPath":"image/academy_active.png",
+        "iconPath":"image/academy.png",
+        "pagePath":"pages/academy/academy",
+        "text":"院校"
+      },
+      {
+        "selectedIconPath":"image/library_active.png",
+        "iconPath":"image/library.png",
+        "pagePath":"pages/data/data",
+        "text":"资料"
+      },
+      {
+        "selectedIconPath":"image/question_active.png",
+        "iconPath":"image/question.png",
+        "pagePath":"pages/question/question",
+        "text":"问答"
+      }
+    ]
   }
+  
 }

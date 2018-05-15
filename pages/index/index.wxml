@@ -1,13 +1,101 @@
 <!--index.wxml-->
 <view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+  <swiper indicator-dots='{{indicator}}' autoplay='{{indicator}}' interval='{{interval}}' duration='{{duration}}' circular='{{indicator}}' indicator-active-color="#fff">
+    <block wx:for="{{imgUrls}}">
+      <swiper-item class="banner">
+        <image src="{{item}}" class="slide-image" />
+      </swiper-item>
     </block>
+  </swiper>
+  <!--院校动态-->
+  <view class='school_dynamic'>
+    <view class='index_title'>
+      <text class='index_title_name'>院校动态</text>
+      <view class='index_title_more'>
+        <text>更多</text>
+        <image class='to_more' src='../../image/to-more.png' />
+      </view>
+    </view>
+    <view class='dynamic_box boxShadow'>
+      <block wx:for="{{dynamicList}}" wx:for-item="item">
+        <view class='dynamic_list'>
+          <text class='dynamic_type'>{{item.Type}}</text>
+          <text class='dynamic_line'></text>
+          <text class='dynamic_con'>{{item.text}}</text>
+        </view>
+      </block>
+    </view>
   </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
+  <!--最新资料-->
+  <view class='new_Data'>
+    <view class='index_title'>
+      <text class='index_title_name'>最新资料</text>
+      <view class='index_title_more'>
+        <text>更多</text>
+        <image class='to_more' src='../../image/to-more.png' />
+      </view>
+    </view>
+    <view class='data_box boxShadow'>
+      <scroll-view scroll-x class='box_slide'>
+
+        <view class='data_item'>
+          <view class='data_item_title'>
+            <text class='data_item_type'>播音</text>
+            <text class='data_item_dir'>即兴评述</text>
+            <image class='data_item_icon' src='../../image/music.png'></image>
+          </view>
+          <view class='data_item_con'>
+            <text class='item_con_text'>作为播音员，日常需要很多的时间训练，下面就是？</text>
+            <view class='item_con_intro'>
+              <text class='item_con_pro'>春眠不觉晓</text>
+              <text class='item_con_date'>2018.05.09</text>
+            </view>
+          </view>
+        </view>
+         <view class='data_item'>
+          <view class='data_item_title'>
+            <text class='data_item_type'>播音</text>
+            <text class='data_item_dir'>即兴评述</text>
+            <image class='data_item_icon' src='../../image/music.png'></image>
+          </view>
+          <view class='data_item_con'>
+            <text class='item_con_text'>作为播音员，日常需要很多的时间训练，下面就是？</text>
+            <view class='item_con_intro'>
+              <text class='item_con_pro'>春眠不觉晓</text>
+              <text class='item_con_date'>2018.05.09</text>
+            </view>
+          </view>
+        </view>
+         <view class='data_item'>
+          <view class='data_item_title'>
+            <text class='data_item_type'>播音</text>
+            <text class='data_item_dir'>即兴评述</text>
+            <image class='data_item_icon' src='../../image/music.png'></image>
+          </view>
+          <view class='data_item_con'>
+            <text class='item_con_text'>作为播音员，日常需要很多的时间训练，下面就是？</text>
+            <view class='item_con_intro'>
+              <text class='item_con_pro'>春眠不觉晓</text>
+              <text class='item_con_date'>2018.05.09</text>
+            </view>
+          </view>
+        </view>
+         <view class='data_item'>
+          <view class='data_item_title'>
+            <text class='data_item_type'>播音</text>
+            <text class='data_item_dir'>即兴评述</text>
+            <image class='data_item_icon' src='../../image/music.png'></image>
+          </view>
+          <view class='data_item_con'>
+            <text class='item_con_text'>作为播音员，日常需要很多的时间训练，下面就是？</text>
+            <view class='item_con_intro'>
+              <text class='item_con_pro'>春眠不觉晓</text>
+              <text class='item_con_date'>2018.05.09</text>
+            </view>
+          </view>
+        </view>
+      </scroll-view>
+
+    </view>
   </view>
 </view>

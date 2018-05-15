@@ -1,0 +1,17 @@
+
+
+.recommend_scroll_x_box{
+  height:245rpx;
+  white-space: nowrap;
+  display: flex;
+}
+.recommend_hot_box{
+  width:230rpx;
+  height:245rpxc;
+  margin-right:24rpx;
+  display: inline-block;
+}
+.recommend_hot_image{
+  width:230rpx;
+  height:143rpx;
+}
