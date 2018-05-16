@@ -1,5 +1,6 @@
 /**index.wxss**/
 @import "dataCard-template/dataCard-template.wxss";
+@import "questionRecommend-template/questionRecommend-template.wxss";
 
 swiper {
   width: 750rpx;

@@ -1,5 +1,7 @@
 <!--index.wxml-->
 <import src="dataCard-template/dataCard-template.wxml" />
+<import src="questionRecommend-template/questionRecommend-template.wxml" />
+
 <view class="container">
   <swiper indicator-dots='{{indicator}}' autoplay='{{indicator}}' interval='{{interval}}' duration='{{duration}}' circular='{{indicator}}' indicator-active-color="#fff">
     <block wx:for="{{imgUrls}}">
@@ -38,8 +40,23 @@
     </view>
     <view class='data_box boxShadow'>
       <scroll-view scroll-x class='box_slide'>
-        <template is="dataCard-template" data="{{...newData}}" />
+        <template is="dataCard-template" />
       </scroll-view>
     </view>
+  </view>
+  <!--问答推荐-->
+  <view class='question_recommend'>
+    <view class='index_title'>
+      <text class='index_title_name'>问答推荐</text>
+      <view class='index_title_more'>
+        <text>更多</text>
+        <image class='to_more' src='../../image/to-more.png' />
+      </view>
+    </view>
+  </view>
+  <view class='question_list'>
+    <block wx:for="{{questionItem}}">
+      <template is="questionRecommend-item" data="{{...item}}" />
+    </block> 
   </view>
 </view>

@@ -1,0 +1,20 @@
+<template name="questionRecommend-item">
+  <view class="qr_item">
+    <view class='qu_item_author'>
+      <image class='author_img' src='../../image/avatarDemo.png'></image>
+      <text class='author_name'>{{author}}</text>
+    </view>
+    <view class='qu_item_content'>
+      <view class='content_title'>
+        {{title}}
+      </view>
+      <view class='content_body'>
+        {{content}}
+      </view>
+      <view class='content_img'>
+        <image src='{{contentImg1}}'></image>
+        <image src='{{contentImg2}}'></image>
+      </view>
+    </view>
+  </view>
+</template>

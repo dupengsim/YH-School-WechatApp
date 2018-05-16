@@ -1,5 +1,5 @@
 <template name="dataCard-template">
-  <block wx:for="newData" wx:for-item="{{item}}">
+  <block wx:for="newData">
     <view class='data_item'>
       <view class='data_item_title'>
         <text class='data_item_type'>{{Type}}</text>
@@ -15,5 +15,4 @@
       </view>
     </view>
   </block>
-
 </template>
