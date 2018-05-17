@@ -1,0 +1,108 @@
+@import "tabMain-template/tabMain-template.wxss";
+
+.search {
+  width: 706rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  position: flex;
+  top: 0;
+  left: 0;
+  margin: 0 23rpx;
+}
+
+.search_icon {
+  width: 39rpx;
+  height: 39rpx;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.search_input_txt {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 22rpx;
+  color: #999;
+  margin-left: 10rpx;
+}
+
+.search_mask {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 999;
+  background: #fff;
+  display: none;
+}
+
+.search_input_wrapper {
+  position: relative;
+  display: flex;
+}
+
+.search_input_box {
+  width: 584rpx;
+  height: 71rpx;
+  line-height: 71rpx;
+  background: rgba(246, 247, 249, 1);
+  border-radius: 15rpx;
+  margin-left: 33rpx;
+}
+
+.search_mask_icon {
+  width: 39rpx;
+  height: 39rpx;
+  position: absolute;
+  top: 15rpx;
+  left: 51rpx;
+}
+
+.search_mask_input {
+  text-align: left;
+  padding-left: 70rpx;
+  color: #000;
+  caret-color: #1e8ae8;
+  height: 71rpx;
+  line-height: 71rpx;
+}
+
+.sip {
+  font-size: 30rpx;
+  color: #cdcdcd;
+}
+
+.search_mask_cancel {
+  color: #999;
+  line-height: 71rpx;
+  margin-left: 20rpx;
+  font-size: 30rpx;
+}
+
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+
+.tab_Box{
+  display: flex;
+}
+.tabType{
+  width:150rpx;
+  background:rgba(232,243,255,1);
+  font-size:26rpx;
+  color: #666;
+  text-align:center;
+}
+.tabType_Item{
+  height:80rpx;
+  line-height:80rpx;
+}
+.active{
+  background:#fff;
+}
+
+

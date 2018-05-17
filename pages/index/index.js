@@ -35,36 +35,11 @@ Page({
         text: "2018年九大美院校考时间出炉，你准备好了吗？"
       }
     ];
-    var questionItem = [
-      {
-        src: "../image/avatarDemo.png",
-        author: "我是一句播音员",
-        title: "作为一句播音员，日常需要花很多的时间训练，有好办法吗？",
-        content: "笑靥如花，真情如花，希望如花，生命亦如花。每个人都有自己喜爱的花，每个人都有许多理由善待自己，把一生的光阴凝成时光长河中的一瓣恒久的心香。在盛开的那一刹那，灿烂夺目的它。",
-        contentImg1: "../../../image/banner.png",
-        contentImg2: "../../../image/banner.png"
-      },
-      {
-        src: "../image/avatarDemo.png",
-        author: "我是一句播音员",
-        title: "作为一句播音员，日常需要花很多的时间训练，有好办法吗？",
-        content: "笑靥如花，真情如花，希望如花，生命亦如花。每个人都有自己喜爱的花，每个人都有许多理由善待自己，把一生的光阴凝成时光长河中的一瓣恒久的心香。在盛开的那一刹那，灿烂夺目的它。笑靥如花，真情如花，希望如花，生命亦如花。每个人都有自己喜爱的花，每个人都有许多理由善待自己，把一生的光阴凝成时光长河中的一瓣恒久的心香。在盛开的那一刹那，灿烂夺目的它。",
-        contentImg1: "../../../image/banner.png",
-        contentImg2: "../../../image/banner.png"
-      },
-      {
-        src: "../image/avatarDemo.png",
-        author: "我是一句播音员",
-        title: "作为一句播音员，日常需要花很多的时间训练，有好办法吗？",
-        content: "笑靥如花，真情如花，希望如花，生命亦如花。每个人都有自己喜爱的花，每个人都有许多理由善待自己，把一生的光阴凝成时光长河中的一瓣恒久的心香。在盛开的那一刹那，灿烂夺目的它。",
-        contentImg1: "../../../image/banner.png",
-        contentImg2: "../../../image/banner.png"
-      },
-    ]
+    
     this.setData({
       dynamicList:dynamicList,
       newData:newData.newData,
-      questionItem: questionItem
+      questionItem: newData.questionItem
     });
   },
   /**
@@ -99,7 +74,7 @@ Page({
    * 页面相关事件处理函数--监听用户下拉动作
    */
   onPullDownRefresh: function () {
-
+    console.log("触动上拉加载")
   },
 
   /**

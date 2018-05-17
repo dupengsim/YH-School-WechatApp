@@ -1,18 +1,16 @@
 <template name="dataCard-template">
-  <block wx:for="newData">
-    <view class='data_item'>
-      <view class='data_item_title'>
-        <text class='data_item_type'>{{Type}}</text>
-        <text class='data_item_dir'>即兴评述</text>
-        <image class='data_item_icon' src='../../image/music.png'></image>
-      </view>
-      <view class='data_item_con'>
-        <text class='item_con_text'>{{text}}</text>
-        <view class='item_con_intro'>
-          <text class='item_con_pro'>{{author}}</text>
-          <text class='item_con_date'>{{date}}</text>
-        </view>
+  <view class='data_item'>
+    <view class='data_item_title'>
+      <text class='data_item_type'>{{Type}}</text>
+      <text class='data_item_dir'>即兴评述</text>
+      <image class='data_item_icon' src='../../image/music.png'></image>
+    </view>
+    <view class='data_item_con'>
+      <text class='item_con_text'>{{text}}</text>
+      <view class='item_con_intro'>
+        <text class='item_con_pro'>{{author}}</text>
+        <text class='item_con_date'>{{date}}</text>
       </view>
     </view>
-  </block>
+  </view>
 </template>

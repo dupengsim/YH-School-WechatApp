@@ -1,40 +1,42 @@
-// pages/academy/academy.js
+var newData = require("../../data/data.js");
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    hotList: [
-      {
-        pic: '../../image/banner.png',
-        title: '玻璃棧道',
-        desc: '22W人去過'
-      }, {
-        pic: '../../image/banner.png',
-        title: '玻璃棧道',
-        desc: '22W人去過'
-      }, {
-        pic: '../../image/banner.png',
-        title: '玻璃棧道',
-        desc: '22W人去過'
-      }, {
-        pic: '../../image/banner.png',
-        title: '玻璃棧道',
-        desc: '22W人去過'
-      }, {
-        pic: '../../image/banner.png',
-        title: '玻璃棧道',
-        desc: '22W人去過'
-      }
-    ]
+    isShow: false,
+    searchVal: "",
+    pHeight:"",
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    let that = this;
+    that.setData({
+      areaType: newData.areaType,
+    });
+    wx.getSystemInfo({
+      success: function (res) {
+        console.log(res.windowHeight),
+          that.setData({
+          pHeight: res.windowHeight -40 ,
+        })
+      },
+    }) 
+  },
+  showMask: function (event) {
+    this.setData({
+      isShow: true,
+      searchVal: ""
+    }) 
+  },
+  hideMask: function (event) {
+    this.setData({
+      isShow: false
+    })
   },
 
   /**

@@ -40,7 +40,9 @@
     </view>
     <view class='data_box boxShadow'>
       <scroll-view scroll-x class='box_slide'>
-        <template is="dataCard-template" />
+        <block wx:for="{{newData}}">
+          <template is="dataCard-template" data="{{...item}}" />
+        </block>
       </scroll-view>
     </view>
   </view>
@@ -53,10 +55,12 @@
         <image class='to_more' src='../../image/to-more.png' />
       </view>
     </view>
-  </view>
-  <view class='question_list'>
-    <block wx:for="{{questionItem}}">
-      <template is="questionRecommend-item" data="{{...item}}" />
-    </block> 
+    <scroll-view scroll-y="true" style='height:{{windowHeight}}px;width:{{windowWidth}}px' bindscrolltolower="pullUpLoad">
+      <view class='question_list'>
+        <block wx:for="{{questionItem}}">
+          <template is="questionRecommend-item" data="{{...item}}" />
+        </block>
+      </view>
+    </scroll-view>
   </view>
 </view>

@@ -1,0 +1,3 @@
+<template name="tabMain">
+  <view class=''>tab的内容</view>
+</template>

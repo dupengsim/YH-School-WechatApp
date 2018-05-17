@@ -1,0 +1,26 @@
+<import src="tabMain-template/tabMain-template.wxml" />
+<view>
+  <view class='search' bindtap='showMask'>
+    <image class='search_icon' src='../../image/search.png'></image>
+    <text class='search_input_txt'>请输入院校名字</text>
+  </view>
+  <view class='search_mask {{isShow ? "show" : "hide"}}'>
+    <view class='search_input_wrapper'>
+      <view class='search_input_box'>
+        <image class='search_mask_icon' src='../../image/search.png'></image>
+        <input class='search_mask_input' placeholder='请输入院校名字' placeholder-class='sip' value='{{searchVal}}' type='text'></input>
+      </view>
+      <text class='search_mask_cancel' bindtap='hideMask'>取消</text>
+    </view>
+  </view>
+  <view class='tab_Box'>
+    <scroll-view class='tabType' style="height:{{pHeight}}px;width:150rpx" scroll-y="true">
+      <block wx:for="{{areaType}}" >
+        <view class='tabType_Item'>{{item.list}}</view>
+      </block>
+    </scroll-view>
+    <view class='tab_main'>
+      <template is="tabMain" />
+    </view>
+  </view>
+</view>
