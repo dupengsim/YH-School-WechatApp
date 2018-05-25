@@ -1,0 +1,25 @@
+<import src="../schoolItem-template/schoolItem-template.wxml" />
+<import src="../article-template/article-template.wxml" />
+
+<template name="collect">
+  <view class="collect_Box {{currentTab == index ? 'show' : 'hide'}}">
+    <view class='collect_tab'>
+      <view class='tab_hd' bindtap='setActive'>
+        <view class='tab_hd_item' data-index="0">院校</view>
+        <view class='tab_hd_line'></view>
+        <view class='tab_hd_item' data-index="1">文章</view>
+        <view class='tab_hd_animate' animation="{{animationData}}"></view>
+      </view>
+      <view class='tab_bd'>
+        <view class='tab_bd_con {{isActive == 0 ? "show" : "hide"}}'>
+          <template is="schoolItem" />
+        </view>
+        <view class='tab_bd_con {{isActive == 1 ? "show" : "hide"}}'>
+          <view class='articleList'>
+            <template is="article" />
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

@@ -2,6 +2,7 @@
   "pages": [
     "pages/index/index",
     "pages/academy/academy",
+    "pages/academy/school/school",
     "pages/data/data",
     "pages/question/question"
   ],
@@ -16,7 +17,7 @@
     "backgroundColor":"#FFF",
     "color":"#666666",
     "selectedColor":"#009FE7",
-    "borderStyle": "white",
+    "borderStyle": "black",
     "list":[
       {
         "selectedIconPath":"image/home_active.png",

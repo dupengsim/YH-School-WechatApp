@@ -1,4 +1,6 @@
 <import src="tabMain-template/tabMain-template.wxml" />
+<import src="collect-template/collect-template.wxml" />
+
 <view>
   <view class='search' bindtap='showMask'>
     <image class='search_icon' src='../../image/search.png'></image>
@@ -15,12 +17,20 @@
   </view>
   <view class='tab_Box'>
     <scroll-view class='tabType' style="height:{{pHeight}}px;width:150rpx" scroll-y="true">
-      <block wx:for="{{areaType}}" >
-        <view class='tabType_Item'>{{item.list}}</view>
-      </block>
+      <view wx:for="{{areaType}}" wx:key="idx">
+        <block>
+          <view class="tabType_Item {{currentTab==index ? 'active':''}}" data-current="{{item.idx}}" data-text="{{item.list}}" bindtap='switchNav'>{{item.list}}</view>
+        </block>
+      </view>
     </scroll-view>
     <view class='tab_main'>
-      <template is="tabMain" />
+      <view class='tab_con' wx:for="{{areaType}}" wx:key="idx">
+        <block>
+           <template wx:if="{{turnOff == '收藏夹'}}" is="collect" data="{{currentTab,index,isActive,animationData}}" />
+           <template wx:else is="tabMain" data="{{...item,currentTab,index,isSelect,currentSelect,isScore,isSpecialty}}" />
+        </block>
+      </view>
+      <view class='alpha {{isBg ? "show" : "hide"}}' bindtap='hidealpha' ></view>
     </view>
   </view>
 </view>

@@ -1,3 +1,50 @@
+
+<import src="../schoolItem-template/schoolItem-template.wxml" />
+
 <template name="tabMain">
-  <view class=''>tab的内容</view>
+  <view class="{{currentTab == index ? 'show' : 'hide'}}">
+    <view class='tab_select_nav'>
+      <view class='nav_item' bindtap='onSelect'>
+        <view class='nav_txt'>生源地</view>
+        <view class='icon'></view>
+      </view>
+      <view class='nav_item nav_score' bindtap='onScore'>
+        <view class='nav_txt'>分数</view>
+        <view class='icon'></view>
+      </view>
+      <view class='nav_item' bindtap='onSpecialty'>
+        <view class='nav_txt'>专业</view>
+        <view class='icon'></view>
+      </view>
+    </view>
+    <view class='select_item origin {{isSelect ? "show" : "hide"}}'>
+      <view class='item_list' bindtap='pitchOn'>{{content}}</view>
+      <view class='item_list' bindtap='pitchOn'>{{content}}</view>
+      <view class='item_list' bindtap='pitchOn'>{{content}}</view>
+      <view class='item_list' bindtap='pitchOn'>{{content}}</view>
+    </view>
+    <view class='select_item origin {{isScore ? "show" : "hide"}}'>
+      <view class='item_list'>全部</view>
+      <view class='item_list'>300分以下</view>
+      <view class='item_list'>300-400分</view>
+      <view class='item_list'>400-500分</view>
+      <view class='item_list'>500分以上</view>
+    </view>
+    <view class='select_item origin {{isSpecialty ? "show" : "hide"}}'>
+      <view class='item_list'>全部</view>
+      <view class='item_list'>播音</view>
+      <view class='item_list'>编导</view>
+      <view class='item_list'>表演</view>
+      <view class='item_list'>摄影</view>
+      <view class='item_list'>美术</view>
+      <view class='item_list'>舞蹈</view>
+      <view class='item_list'>音乐</view>
+      <view class='item_list'>服表</view>
+      <view class='item_list'>书法</view>
+      <view class='item_list'>空乘</view>
+    </view>
+    <view>
+     <template is="schoolItem" data="{{...item}}" />
+    </view>
+  </view>
 </template>

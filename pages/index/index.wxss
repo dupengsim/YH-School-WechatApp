@@ -57,7 +57,7 @@ swiper image {
 
 .dynamic_type {
   font-weight: bold;
-  color: #2e94fe;
+  color: #53BBEA;
   margin-right: 7rpx;
 }
 

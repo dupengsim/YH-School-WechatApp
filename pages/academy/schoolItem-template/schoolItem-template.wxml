@@ -1,0 +1,25 @@
+<template name="schoolItem">
+  <view class='school_list'>
+    <view class='school_Item' bindtap='onSchoolTap'>
+      <image class='school_logo' src='/image/avatarDemo.png'></image>
+      <view class='school_con'>
+        <text class='school_txt'>中国传媒大学</text>
+        <view class='school_icon'>
+          <image class='icon_Leaflet' src='/image/icon1.png'></image>
+          <image class='icon_grade' src='/image/icon2.png'></image>
+        </view>
+      </view>
+    </view>
+    <view class='school_Item'>
+      <image class='school_logo' src='/image/avatarDemo.png'></image>
+      <view class='school_con'>
+        <text class='school_txt'>中国传媒大学</text>
+        <view class='school_icon'>
+          <image class='icon_Leaflet' src='/image/icon3.png'></image>
+          <image class='icon_grade' src='/image/icon4.png'></image>
+        </view>
+      </view>
+    </view>
+  </view>
+
+</template>

@@ -6,6 +6,7 @@
   box-sizing: border-box;
   width:100%;
   overflow: hidden;
+  font-family: "微软雅黑";
 } 
 
 ::-webkit-scrollbar{

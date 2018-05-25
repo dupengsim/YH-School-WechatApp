@@ -1,0 +1,31 @@
+@import "../schoolItem-template/schoolItem-template.wxss";
+@import "../article-template/article-template.wxss";
+.tab_hd{
+  display: flex;
+  border-top:1rpx solid #e5e5e5;
+  border-bottom: 1rpx solid #e5e5e5;
+  font-size:26rpx;
+  color:#666;
+  justify-content: center;
+  height:67rpx;
+  line-height:67rpx;
+  position: relative;
+}
+.tab_hd_item{
+  width:49%;
+  text-align: center;
+}
+.tab_hd_line{
+  width:1rpx;
+  height:36rpx;
+  background:#e5e5e5;
+  margin-top:18rpx;
+}
+.tab_hd_animate{
+  width:103rpx;
+  border-bottom:3rpx solid #28AEEB;
+  position: absolute;
+  bottom:0;
+  left: 100rpx;
+}
+

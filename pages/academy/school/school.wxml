@@ -1,0 +1,97 @@
+<!--pages/academy/school/school.wxml-->
+<import src="../article-template/article-template.wxml" />
+
+<view class='container'>
+  <view class='school_head'>
+    <image class='school_head_img' src='/image/avatarDemo.png'></image>
+    <view class='school_head_txt'>
+      <view class='head_address'>北京</view>
+      <view class='head_intro'>
+        <text>教育部直属</text>
+        <text>211工程</text>
+        <text>普通本科</text>
+      </view>
+      <view class='school_score'>文化分：300—500分以上</view>
+      <view class='school_num'>招生人数：683人</view>
+    </view>
+  </view>
+  <view class='school_content'>
+    <scroll-view scroll-x="true" class='school-scroll'>
+      <block wx:for="{{article}}">
+        <view data-index="{{index}}" bindtap='onArticle'>{{item}}</view>
+      </block>
+      <view class='school_line' animation="{{animationData}}"></view>
+    </scroll-view>
+    <view class='school_con {{currentTab == 0 ? "show" : "hide"}}'>
+      <template is="article" />
+    </view>
+    <view class='school_con {{currentTab == 1 ? "show" : "hide"}}'>
+      <view class='specialty'>
+        <view class='specialty_title'>
+          <text>播音</text>
+        </view>
+        <view class='specialty_list'>
+          <view class='list_item'>
+            <text>播音主持与艺术</text>
+            <view class='right'><text class="right-arrow1"></text><text class="right-arrow2"></text></view>
+          </view>
+          <view class='list_item'>
+            <text>播音主持与艺术</text>
+            <view class='right'><text class="right-arrow1"></text><text class="right-arrow2"></text></view>
+          </view>
+          <view class='list_item'>
+            <text>播音主持与艺术</text>
+            <view class='right'><text class="right-arrow1"></text><text class="right-arrow2"></text></view>
+          </view>
+          <view class='list_item'>
+            <text>播音主持与艺术</text>
+            <view class='right'><text class="right-arrow1"></text><text class="right-arrow2"></text></view>
+          </view>
+          <view class='list_item'>
+            <text>播音主持与艺术</text>
+            <view class='right'><text class="right-arrow1"></text><text class="right-arrow2"></text></view>
+          </view>
+        </view>
+      </view>
+       <view class='specialty'>
+        <view class='specialty_title'>
+          <text>编导</text>
+        </view>
+        <view class='specialty_list'>
+          <view class='list_item'>
+            <text>播音主持与艺术</text>
+            <view class='right'><text class="right-arrow1"></text><text class="right-arrow2"></text></view>
+          </view>
+          <view class='list_item'>
+            <text>播音主持与艺术</text>
+            <view class='right'><text class="right-arrow1"></text><text class="right-arrow2"></text></view>
+          </view>
+          <view class='list_item'>
+            <text>播音主持与艺术</text>
+            <view class='right'><text class="right-arrow1"></text><text class="right-arrow2"></text></view>
+          </view>
+          <view class='list_item'>
+            <text>播音主持与艺术</text>
+            <view class='right'><text class="right-arrow1"></text><text class="right-arrow2"></text></view>
+          </view>
+          <view class='list_item'>
+            <text>播音主持与艺术</text>
+            <view class='right'><text class="right-arrow1"></text><text class="right-arrow2"></text></view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class='school_con {{currentTab == 2 ? "show" : "hide"}}'>
+      <template is="article" />
+    </view>
+    <view class='school_con {{currentTab == 3 ? "show" : "hide"}}'>
+      <template is="article" />
+    </view>
+    <view class='school_con {{currentTab == 4 ? "show" : "hide"}}'>
+      <template is="article" />
+    </view>
+    <view class='school_con {{currentTab == 5 ? "show" : "hide"}}'>
+      <template is="article" />
+    </view>
+  </view>
+</view>

@@ -1,0 +1,69 @@
+@import "../schoolItem-template/schoolItem-template.wxss";
+
+.tab_con {
+  z-index: 99;
+}
+
+.tab_select_nav {
+  display: flex;
+  border-bottom: 1rpx solid #e2e2e2;
+  justify-content: left;
+  align-items: center;
+}
+
+.nav_item {
+  border: 1rpx solid #e2e2e2;
+  border-bottom: none;
+  color: #666;
+  font-size: 24rpx;
+  width: 201rpx;
+  text-align: center;
+  line-height: 67rpx;
+}
+
+.nav_item:first-child {
+  border-left: none;
+}
+
+.nav_txt {
+  float: left;
+  margin-left: 57rpx;
+}
+
+.icon {
+  float: left;
+  border: 12rpx solid transparent;
+  border-top: 12rpx solid #e2e2e2;
+  margin-left: 10rpx;
+  margin-top: 28rpx;
+}
+
+.nav_score {
+  border-left: none;
+  border-right: none;
+}
+
+.select_item {
+  position: absolute;
+  top: 70rpx;
+  left: 0;
+  max-height: 539rpx;
+  overflow: hidden;
+  overflow-y: auto;
+  background:#fff;
+  z-index:99;
+  display: none;
+}
+
+.item_list {
+  width: 590rpx;
+  background: #fff;
+  padding-left: 10rpx;
+  line-height: 66rpx;
+  border-bottom: 1rpx solid #e2e2e2;
+  margin-left: 29rpx;
+  font-size: 26rpx;
+  color: #666;
+}
+
+

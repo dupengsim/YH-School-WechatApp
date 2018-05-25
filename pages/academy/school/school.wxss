@@ -1,0 +1,145 @@
+/* pages/academy/school/school.wxss */
+@import "../article-template/article-template.wxss";
+
+.container {
+  background: #f2f9ff;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.school_head {
+  background: #fff;
+  width: 100%;
+  padding: 20rpx 0 30rpx 40rpx;
+  display: flex;
+}
+
+.school_head_img {
+  width: 140rpx;
+  height: 140rpx;
+  border-radius: 50%;
+  margin-right: 20rpx;
+}
+
+.school_head_txt {
+  font-size: 26rpx;
+  color: #333;
+  line-height: 32rpx;
+}
+
+.head_intro text {
+  margin-right: 20rpx;
+}
+
+.school_content {
+  margin-top: 20rpx;
+  background: #fff;
+  height: 100%;
+}
+
+.school-scroll {
+  height: 65rpx;
+  line-height: 65rpx;
+  font-size: 24rpx;
+  color: #333;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  padding-left: 40rpx;
+  position: relative;
+  border-bottom: 1rpx solid #dcdcdc;
+}
+
+.school-scroll view {
+  margin-right: 50rpx;
+  display: inline-block;
+  width: 103rpx;
+  text-align: center;
+}
+
+.school_line {
+  position: absolute;
+  left: 0rpx;
+  width: 103rpx;
+  border-bottom: 3rpx solid #28aeeb;
+  bottom: 40rpx;
+}
+
+.articleItem {
+  padding: 20rpx 46rpx 15rpx 39rpx;
+}
+
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+
+.specialty {
+  font-size: 28rpx;
+}
+
+.specialty_title {
+  border-bottom: 1rpx solid #dcdcdc;
+  padding-bottom: 10rpx;
+  padding: 20rpx 0 15rpx 39rpx;
+}
+
+.specialty_title text {
+  background: #53bbea;
+  padding: 4rpx 30rpx;
+  border-radius: 5rpx;
+  color: #fff;
+}
+
+.specialty_list {
+  display: flex;
+  flex-direction: column;
+  color: #666;
+}
+
+.specialty_list .list_item {
+  border-bottom: 1rpx solid #dcdcdc;
+  padding-left: 39rpx;
+  line-height: 60rpx;
+  position: relative;
+  display: flex;
+}
+
+.right {
+  width: 20rpx;
+  height: 20rpx;
+  position: absolute;
+  right: 41rpx;
+  top: 20rpx;
+}
+
+.right-arrow1, .right-arrow2 {
+  width: 0;
+  height: 0;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-top: 10rpx transparent dashed;
+  border-right: 10rpx transparent dashed;
+  border-bottom: 10rpx transparent dashed;
+  border-left: 10rpx white solid;
+  overflow: hidden;
+}
+
+.right-arrow1 {
+  left: 1rpx; 
+  border-left: 10rpx #666666 solid;
+}
+
+.right-arrow2 {
+  border-left: 10rpx white solid;
+}
