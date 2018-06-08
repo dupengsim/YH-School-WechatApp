@@ -1,0 +1,6 @@
+<template name="bottomNav">
+  <view class='bottomNav'>
+    <view class='share'><image class='share' src='/image/share.png'></image></view>  
+    <view class='answer' catchtap='onAnswertap'>回答</view>
+  </view>
+</template>

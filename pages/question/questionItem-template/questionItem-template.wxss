@@ -1,0 +1,81 @@
+.questionItem {
+  margin-top: 20rpx;
+  background: #fff;
+  padding: 20rpx 34rpx 30rpx 38rpx;
+}
+
+.item_top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  line-height: 59rpx;
+}
+
+.item_aa {
+  display: flex;
+}
+
+.item_avatar {
+  width: 56rpx;
+  height: 56rpx;
+  border-radius: 50%;
+  margin-right: 14rpx;
+}
+
+.item_author {
+  font-size: 22rpx;
+  color: #666;
+}
+
+.item_stick {
+  display: flex;
+}
+
+.stick_icon {
+  width: 20rpx;
+  height: 26rpx;
+  margin-top: 15rpx;
+  margin-right: 10rpx;
+}
+
+.stick_txt {
+  font-size: 20rpx;
+  color: #53bbea;
+}
+
+.item_con {
+  margin-top: 20rpx;
+}
+
+.item_name {
+  font-size: 28rpx;
+  color: #53bbea;
+  width: 660rpx;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.item_txt {
+  font-size: 22rpx;
+  color: #666;
+  line-height: 39rpx;
+  width: 660rpx;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+}
+
+.item_imgs {
+  display: flex;
+}
+
+.item_imgs image {
+  width: 211rpx;
+  height: 155rpx;
+  margin-right: 15rpx;
+  margin-top: 10rpx;
+  border-radius: 20rpx;
+}

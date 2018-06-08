@@ -1,0 +1,25 @@
+.dataList{
+  font-size:28rpx;
+  color:#666;
+}
+
+.dataList-item{
+  border-bottom:1rpx solid #DCDCDC;
+  padding:20rpx 48rpx 15rpx 37rpx;
+}
+
+.item-title{
+  text-overflow: ellipsis;
+  width:666rpx;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp:2;
+  overflow: hidden;
+}
+
+.item-form{
+  font-size:18rpx;
+  color:#999;
+  display: flex;
+  justify-content:space-between;
+}

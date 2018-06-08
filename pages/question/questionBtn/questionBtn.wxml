@@ -1,0 +1,13 @@
+<!--pages/question/questionBtn/questionBtn.wxml-->
+<view class='question_wrapper'>
+  <view class='question_title'>
+    <input placeholder='请输入问题，并以“？”结尾' placeholder-style='inputStyle' bindinput='onTitleFocus' maxlength="{{maxLength}}" ></input>
+  </view>
+  <view class='question_con'>
+    <textarea placeholder='添加问题描述' placeholder-style='textStyle'></textarea>
+  </view>
+  <view class='question_bottom'>
+    <image class='question_icon' src='/image/pic.png'></image>
+    <text class='question_issue'>发布</text>
+  </view>
+</view> 

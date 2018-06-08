@@ -1,0 +1,26 @@
+/* pages/question/replyPage/replyPage.wxss */
+.reply_Wrapper{
+  border-top:1rpx solid #EDF2F6;
+  width:100%;
+}
+
+.reply_text{
+  width:666rpx;
+  margin:20rpx auto;
+  font-size:24rpx;
+  color: #666666;
+  line-height: 35rpx;
+  min-height: 500rpx;
+}
+
+.replyStyle{
+  font-size:24rpx;
+  color: #666666;
+}
+.reply_issue{
+  position: fixed;
+  bottom: 25rpx;
+  right: 53rpx;
+  font-size:28rpx;
+  color: #666;
+}

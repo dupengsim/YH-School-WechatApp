@@ -1,0 +1,48 @@
+.question_top {
+  background: #fff;
+  margin-bottom: 20rpx;
+  padding: 20rpx 40rpx 20rpx 36rpx;
+}
+
+.top_title {
+  font-size: 28rpx;
+  color: #53bbea;
+  width: 660rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.top_txt {
+  font-size: 22rpx;
+  color: #666;
+  width: 660rpx;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  line-height: 39rpx;
+}
+.top_imgs{
+  display: flex;
+}
+.top_imgs image{
+  width: 211rpx;
+  height: 155rpx;
+  margin-right:15rpx;
+  margin-top:10rpx;
+  border-radius: 20rpx;
+}
+.top_date{
+  display: flex;
+  justify-content: space-between;
+  font-size:22rpx;
+  color: #999;
+  margin-top:20rpx;
+}
+.myQ_operation{
+  font-size:22rpx;
+  color: #53BBEA;
+  line-height: 50rpx;
+}

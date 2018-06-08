@@ -1,0 +1,27 @@
+.navbarHd {
+  height: 65rpx;
+  line-height: 65rpx;
+  font-size: 24rpx;
+  color: #333;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  padding-left: 40rpx;
+  position: relative;
+  border-bottom: 1rpx solid #dcdcdc;
+}
+
+.navbarHd view {
+  margin-right: 50rpx;
+  display: inline-block;
+  width: 103rpx;
+  text-align: center;
+}
+
+.nav_line {
+  position: absolute;
+  left: 0rpx;
+  width: 103rpx;
+  border-bottom: 5rpx solid #28aeeb;
+  top: 63rpx;
+}

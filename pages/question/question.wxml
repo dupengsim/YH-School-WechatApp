@@ -1,2 +1,18 @@
-<!--pages/question/question.wxml-->
-<text>pages/question/question.wxml</text>
+<import src="../navbar-template/navbar-template.wxml" />
+<import src="questionItem-template/questionItem-template.wxml" />
+<import src="myQuestion-template/myQuestion-template.wxml" />
+
+<view class="question_Wrapper">
+  <view class='question_top'>
+    <template is="navbar"  data="{{article,animationData,currentTab}}" />
+  </view> 
+  <view class='question_con'>
+    <view class='question_bd {{currentTab == 0 ? "show" : "hide"}}'>
+      <template is="questionItem" />
+    </view>
+    <view class='question_bd {{currentTab == 1 ? "show" : "hide"}}'>
+      <template is="myQuestion" data="{{myQuestionArr,animationData,currentTab,sub_animationData,subCurrentTab,questionItem}}" />
+    </view>
+  </view>
+  
+</view>

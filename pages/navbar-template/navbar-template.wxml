@@ -1,0 +1,10 @@
+<template name="navbar">
+  <view class='navbar'>
+    <scroll-view scroll-x="true" class='navbarHd'>
+      <block wx:for="{{article}}">
+        <view data-index="{{index}}" bindtap='onArticle'>{{item}}</view>
+      </block>
+      <view class='nav_line' animation="{{animationData}}"></view>
+    </scroll-view>
+  </view>
+</template>

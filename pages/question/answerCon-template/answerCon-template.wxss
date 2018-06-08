@@ -1,0 +1,173 @@
+.answerItem {
+  padding-top: 20rpx;
+  margin-bottom: 20rpx;
+}
+
+.head_left {
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.head_left_img {
+  width: 56rpx;
+  height: 56rpx;
+  border-radius: 50%;
+  margin-right: 14rpx;
+}
+
+.head_left_txt {
+  font-size: 22rpx;
+  color: #666;
+}
+
+.head_right {
+  float: right;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.like_icon {
+  width: 30rpx;
+  height: 30rpx;
+  margin-right: 10rpx;
+}
+
+.like_num {
+  font-size: 24rpx;
+  color: #999;
+}
+
+.answer_txt {
+  font-size: 24rpx;
+  color: #666;
+  width: 648rpx;
+  line-height: 38rpx;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  margin-top: 10rpx;
+}
+
+.answer_in {
+  border-top: 1rpx solid #edf2f6;
+  padding-top: 15rpx;
+  font-size: 22rpx;
+  color: #999;
+  margin-top: 20rpx;
+}
+
+.answer_date {
+  float: left;
+}
+
+.answer_btn {
+  float: right;
+}
+
+.answer_more {
+  text-align: center;
+  line-height: 50rpx;
+  font-size: 22rpx;
+  color: #999;
+  padding-bottom: 50rpx;
+}
+
+.revertList {
+  width: 662rpx;
+  margin: 30rpx auto 15rpx;
+  background: #f6faff;
+  border-radius: 10rpx;
+  padding-bottom: 30rpx;
+  position: relative;
+  display: none;
+}
+
+.revertList::after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 20rpx solid transparent;
+  border-right: 20rpx solid transparent;
+  border-bottom: 25rpx solid #f6faff;
+  position: absolute;
+  right: 20rpx;
+  top: -23rpx;
+}
+
+.revertItem {
+  margin-bottom: 20rpx;
+  color: #666;
+  padding: 20rpx 30rpx 20rpx 26rpx;
+}
+
+.revert_Head {
+  display: flex;
+  align-items: center;
+}
+
+.revert_img {
+  width: 47rpx;
+  height: 47rpx;
+  margin-right: 16rpx;
+}
+
+.revert_name {
+  font-size: 20rpx;
+}
+
+.revert_txt {
+  font-size: 22rpx;
+  line-height: 38rpx;
+  width: 595rpx;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  margin-top: 15rpx;
+  margin-bottom: 8rpx;
+}
+
+.revert_date {
+  font-size: 20rpx;
+  color: #999;
+  margin-top: 8rpx;
+}
+
+.reverrt_Btn {
+  width: 170rpx;
+  height: 39rpx;
+  text-align: center;
+  line-height: 39rpx;
+  color: #fff;
+  background: #75b9ff;
+  margin: 0 auto;
+  font-size: 21rpx;
+  border-radius: 6rpx;
+}
+
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+
+.wholeBtn {
+  text-align: center;
+  margin-bottom: 10rpx;
+  font-size:40rpx;
+  font-weight: bold;
+  color: #666666;
+}
+
+.wholeBtn image {
+  width: 48rpx;
+  height: 7rpx;
+}

@@ -1,0 +1,11 @@
+<!--pages/question/answerPage/answerPage.wxml-->
+<view class='answer_wrapper'>
+  <view class='answer_con'>
+    <view class='answer_head'>作为播音员。日常需要花很多的时间训练？</view>
+    <textarea focus="true" placeholder="在这里开始回答吧" placeholder-class="textStyle" maxlength="-1 " bindfocus="locationFocus" bindblur="textAreaBlur" cursor-spacing="20"></textarea>
+  </view>
+  <view class='answer_bottom'>
+    <view class='answer_pic' catchtap='upPic'><image src='/image/pic.png'></image></view>
+    <view class='answer_issue'>发布</view>
+  </view>
+</view>

@@ -1,7 +1,9 @@
 <!--pages/academy/school/school.wxml-->
 <import src="../article-template/article-template.wxml" />
+<import src="../school-Intro-template/school-Intro-template.wxml" />
+<import src="../../navbar-template/navbar-template.wxml" />
 
-<view class='container'>
+<view class='school_Wrapper'>
   <view class='school_head'>
     <image class='school_head_img' src='/image/avatarDemo.png'></image>
     <view class='school_head_txt'>
@@ -16,12 +18,7 @@
     </view>
   </view>
   <view class='school_content'>
-    <scroll-view scroll-x="true" class='school-scroll'>
-      <block wx:for="{{article}}">
-        <view data-index="{{index}}" bindtap='onArticle'>{{item}}</view>
-      </block>
-      <view class='school_line' animation="{{animationData}}"></view>
-    </scroll-view>
+    <template is="navbar" data="{{article,animationData,currentTab}}" />
     <view class='school_con {{currentTab == 0 ? "show" : "hide"}}'>
       <template is="article" />
     </view>
@@ -33,50 +30,80 @@
         <view class='specialty_list'>
           <view class='list_item'>
             <text>播音主持与艺术</text>
-            <view class='right'><text class="right-arrow1"></text><text class="right-arrow2"></text></view>
+            <view class='right'>
+              <text class="right-arrow1"></text>
+              <text class="right-arrow2"></text>
+            </view>
           </view>
           <view class='list_item'>
             <text>播音主持与艺术</text>
-            <view class='right'><text class="right-arrow1"></text><text class="right-arrow2"></text></view>
+            <view class='right'>
+              <text class="right-arrow1"></text>
+              <text class="right-arrow2"></text>
+            </view>
           </view>
           <view class='list_item'>
             <text>播音主持与艺术</text>
-            <view class='right'><text class="right-arrow1"></text><text class="right-arrow2"></text></view>
+            <view class='right'>
+              <text class="right-arrow1"></text>
+              <text class="right-arrow2"></text>
+            </view>
           </view>
           <view class='list_item'>
             <text>播音主持与艺术</text>
-            <view class='right'><text class="right-arrow1"></text><text class="right-arrow2"></text></view>
+            <view class='right'>
+              <text class="right-arrow1"></text>
+              <text class="right-arrow2"></text>
+            </view>
           </view>
           <view class='list_item'>
             <text>播音主持与艺术</text>
-            <view class='right'><text class="right-arrow1"></text><text class="right-arrow2"></text></view>
+            <view class='right'>
+              <text class="right-arrow1"></text>
+              <text class="right-arrow2"></text>
+            </view>
           </view>
         </view>
       </view>
-       <view class='specialty'>
+      <view class='specialty'>
         <view class='specialty_title'>
           <text>编导</text>
         </view>
         <view class='specialty_list'>
           <view class='list_item'>
             <text>播音主持与艺术</text>
-            <view class='right'><text class="right-arrow1"></text><text class="right-arrow2"></text></view>
+            <view class='right'>
+              <text class="right-arrow1"></text>
+              <text class="right-arrow2"></text>
+            </view>
           </view>
           <view class='list_item'>
             <text>播音主持与艺术</text>
-            <view class='right'><text class="right-arrow1"></text><text class="right-arrow2"></text></view>
+            <view class='right'>
+              <text class="right-arrow1"></text>
+              <text class="right-arrow2"></text>
+            </view>
           </view>
           <view class='list_item'>
             <text>播音主持与艺术</text>
-            <view class='right'><text class="right-arrow1"></text><text class="right-arrow2"></text></view>
+            <view class='right'>
+              <text class="right-arrow1"></text>
+              <text class="right-arrow2"></text>
+            </view>
           </view>
           <view class='list_item'>
             <text>播音主持与艺术</text>
-            <view class='right'><text class="right-arrow1"></text><text class="right-arrow2"></text></view>
+            <view class='right'>
+              <text class="right-arrow1"></text>
+              <text class="right-arrow2"></text>
+            </view>
           </view>
           <view class='list_item'>
             <text>播音主持与艺术</text>
-            <view class='right'><text class="right-arrow1"></text><text class="right-arrow2"></text></view>
+            <view class='right'>
+              <text class="right-arrow1"></text>
+              <text class="right-arrow2"></text>
+            </view>
           </view>
         </view>
       </view>
@@ -91,7 +118,7 @@
       <template is="article" />
     </view>
     <view class='school_con {{currentTab == 5 ? "show" : "hide"}}'>
-      <template is="article" />
+      <template is="schoolIntro" />
     </view>
   </view>
 </view>

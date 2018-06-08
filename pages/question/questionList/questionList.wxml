@@ -1,0 +1,12 @@
+<!--pages/question/questionList/questionList.wxml-->
+<import src="../questionCon-template/questionCon-template.wxml" />
+<import src="../bottomNav-template/bottomNav-template.wxml" />
+<import src="../answerCon-template/answerCon-template.wxml" />
+
+<view class='questionList'>
+  <template is="questionCon" />
+  <view class='answer_con'>
+    <template is="answerCon" data="{{Onswitch}}" />
+  </view>
+  <template is="bottomNav" />
+</view>

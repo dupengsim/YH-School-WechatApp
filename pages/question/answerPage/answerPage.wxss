@@ -1,0 +1,58 @@
+/* pages/question/answerPage/answerPage.wxss */
+.answer_wrapper{
+  position: absolute;
+  background: #fff;
+  height: 100%;
+  top:0;
+  left:0;
+  right:0;
+  bottom: 0;
+}
+
+.answer_con{
+  width:667rpx;
+  margin:10rpx auto 0;
+}
+.answer_head{
+  border-bottom: 1rpx solid #EDF2F6;
+  font-size:28rpx;
+  color:#53BBEA;
+  line-height: 60rpx;
+}
+
+.answer_con textarea{
+  width:667rpx;
+  height:500rpx;
+  margin:10rpx auto;
+  line-height:35rpx;
+  color: #666;
+  font-size:24rpx;
+}
+
+.textStyle{
+  font-size: 24rpx;
+  color: #666;
+}
+
+.answer_bottom{
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top:1rpx solid #EDF2F6;
+  padding:20rpx 53rpx;
+  left: 0;
+  height:50rpx;
+  width:644rpx;
+}
+
+.answer_pic image{
+  width:57rpx;
+  height:49rpx;
+}
+
+.answer_issue{
+  font-size:28rpx;
+  color: #666;
+}

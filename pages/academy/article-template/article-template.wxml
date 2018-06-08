@@ -1,5 +1,5 @@
 <template name="article">
-  <view class='articleItem'>
+  <view class='articleItem' bindtap='onArticle'>
     <view class='article_txt'>文章标题文章标题文章标题文章标题文章标题文章标题文章标题文章标题template</view>
     <view class='articleData'>
       <view class='article_source'>来源：中国传媒大学</view>

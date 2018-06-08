@@ -1,0 +1,16 @@
+/* pages/question/questionList/questionList.wxss */
+@import "../questionCon-template/questionCon-template.wxss";
+@import "../bottomNav-template/bottomNav-template.wxss";
+@import "../answerCon-template/answerCon-template.wxss";
+
+.questionList {
+  background: #f2faff;
+  height: 100%;
+  padding-bottom: 104rpx;
+}
+
+.answer_con {
+  background: #fff;
+  padding: 0 45rpx;
+}
+

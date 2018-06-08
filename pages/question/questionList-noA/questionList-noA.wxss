@@ -1,0 +1,21 @@
+/* pages/question/questionList-noA/questionList-noA.wxss */
+@import "../bottomNav-template/bottomNav-template.wxss";
+@import "../questionCon-template/questionCon-template.wxss";
+
+.questionList{
+  background: #f2faff;
+  height:100%;
+}
+
+
+.answer_con{
+  text-align: center;
+  width:100%;
+  background: #fff;
+  padding-top:297rpx;
+}
+
+.null{
+  font-size:24rpx;
+  color: #75B9FF;
+}

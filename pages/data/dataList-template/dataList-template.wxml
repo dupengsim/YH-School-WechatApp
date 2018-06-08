@@ -1,0 +1,13 @@
+<template name="dataList">
+  <view class='dataList'>
+    <block wx:for="{{dataList}}">
+      <view class='dataList-item'>
+        <view class='item-title'>{{item}}</view>
+        <view class='item-form'>
+          <text class='item-autor'>我是一名播音员</text>
+          <text class='item-date'>2015.05.31</text>
+        </view>
+      </view>
+    </block>
+  </view>
+</template>

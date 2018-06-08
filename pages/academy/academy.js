@@ -112,6 +112,11 @@ Page({
       url: '../../pages/academy/school/school',
     })
   },
+  onArticle: function(event) {
+    wx.navigateTo({
+      url: '../../pages/academy/articleList/articleList',
+    })
+  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

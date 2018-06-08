@@ -1,22 +1,37 @@
-<!--pages/data/data.wxml-->
-<view class="tab">
-  <view class="tab-left" bindtap="tabFun">
+<import src="../navbar-template/navbar-template.wxml" />
+<import src="dataList-template/dataList-template.wxml" />
 
-    <!-- <view wx:for="items">
-      <view class="{{tabArr.curHdIndex== 0 ? 'active' : ''}}" id="tab-hd01" data-id="0">tab-hd{{}}</view>
-    </view> -->
-
-    <view class="{{tabArr.curHdIndex== 0 ? 'active' : ''}}" id="tab-hd01" data-id="0">tab-hd01</view>
-    <view class="{{tabArr.curHdIndex== 1 ? 'active' : ''}}" id="tab-hd02" data-id="1">tab-hd01</view>
-    <view class="{{tabArr.curHdIndex== 2 ? 'active' : ''}}" id="tab-hd03" data-id="2">tab-hd01</view>
-    <view class="{{tabArr.curHdIndex== 3 ? 'active' : ''}}" id="tab-hd04" data-id="3">tab-hd01</view>
+<view class='data_Wrapper'>
+  <view class='data_head'>
+    <view class='data_select'>
+      <view class="phone_one" bindtap="clickPerson">
+        <view class="phone_personal">{{firstPerson}}</view>
+      </view>
+      <view class="person_box">
+        <view class="phone_select" hidden="{{selectPerson}}">
+          <block wx:for="{{selectArr}}">
+            <view class="select_one" bindtap="mySelect" data-me="{{item}}">{{item}}</view>
+          </block>
+        </view>
+      </view>
+    </view>
+    <view class='data_tabnav'>
+      <template is="navbar" data="{{article,animationData,currentTab}}" />
+    </view>
   </view>
-  <view class="tab-right">
-    <view class="right-item {{tabArr.curBdIndex=='0'? 'active' : ''}}">tab-bd01</view>
-    <view class="right-item {{tabArr.curBdIndex=='1'? 'active' : ''}}">tab-bd02</view>
-    <view class="right-item {{tabArr.curBdIndex=='2'? 'active' : ''}}">tab-bd03</view>
-    <view class="right-item {{tabArr.curBdIndex=='3'? 'active' : ''}}">tab-bd04</view>
+  <view class='data_content'>
+    <view class='data_tabBd'>
+      <view class='tab_con {{currentTab == 0 ? "show" : "hide"}}'>
+        <template is="dataList" data="{{dataList}}" />
+      </view>
+      <view class='tab_con {{currentTab == 1 ? "show" : "hide"}}'>自备稿件</view>
+      <view class='tab_con {{currentTab == 2 ? "show" : "hide"}}'>
+        <template is="dataList" data="{{dataList}}" />
+      </view>
+      <view class='tab_con {{currentTab == 3 ? "show" : "hide"}}'>攻略技巧</view>
+      <view class='tab_con {{currentTab == 4 ? "show" : "hide"}}'>
+        <template is="dataList" data="{{dataList}}" />
+      </view>
+    </view>
   </view>
 </view>
-
-

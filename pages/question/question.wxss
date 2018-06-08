@@ -1,1 +1,61 @@
 /* pages/question/question.wxss */
+@import "../navbar-template/navbar-template.wxss";
+@import "questionItem-template/questionItem-template.wxss";
+@import "myQuestion-template/myQuestion-template.wxss";
+
+page {
+  background: #fff;
+  width:100%;
+}
+.question_Wrapper{
+  width:100%;
+  overflow: hidden;
+}
+
+.question_top {
+  height: 72rpx;
+  line-height: 72rpx;
+  background: #fff;
+  text-align: center;
+}
+
+.navbar {
+  height: 100%;
+  line-height: 72rpx;
+}
+.navbarHd {
+  border-bottom: none;
+  font-size:26rpx;
+  height:72rpx;
+  line-height:72rpx;
+  box-shadow:0px 15rpx 29rpx rgba(143,211,255,0.25);
+}
+.nav_line{
+  top:66rpx;
+  left:224rpx;
+}
+.question_con{
+  /* margin-top:20rpx; */
+}
+.question_Btn{
+  display: flex;
+  flex-direction: column;
+  background: #53BBEA;
+  border-radius: 50%;
+  width:100rpx;
+  height:100rpx;
+  text-align: center;
+  color: #fff;
+  line-height:41rpx;
+  font-size:22rpx;
+  font-weight: bold;
+  position: fixed;
+  bottom: 110rpx;
+  right: 52rpx;
+}
+
+.btn_icon{
+  font-size:46rpx;
+  margin-top:8rpx;
+}
+

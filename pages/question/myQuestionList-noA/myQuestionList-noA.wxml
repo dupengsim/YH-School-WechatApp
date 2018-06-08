@@ -1,0 +1,25 @@
+<!--pages/question/questionList-noA/questionList-noA.wxml-->
+<import src="mqBottomNav-template/mqBottomNav-template.wxml" />
+
+<view class='questionList'>
+  <view class='question_top'>
+    <view class='top_title'>作为播音员，日常需要花费很多的时候来练习？</view>
+    <view class='myQ_operation'>
+      <text class='myQ_edit'>编辑</text> | <text class='myQ_delete' catchtap='onDelete'>删除</text>
+    </view>
+    <view class='top_txt'>2018年6月5日，第47个世界环境日。中国将“美丽中国，我是行动者”确立为今年环境日的主题，旨在推动社会各界和公众积极参与生态文明建设，以实实在在的行动共建天蓝、地绿、水清的美丽中国。环境就是民生，青山就是美丽，蓝天也是幸福”。习近平生态文明思想，将如何处理人类生产与自然环境关系的认识论发展到了一个新高度，体现出习近平总书记作为人民领袖的深厚民生情怀和强烈责任担当，为我们坚定不移走生产发展、生活富裕、生态良好的文明发展道路指明了方向。</view>
+    <view class='top_imgs'>
+      <image src='/image/demo.jpg'></image>
+      <image src='/image/demo.jpg'></image>
+      <image src='/image/demo.jpg'></image>
+    </view>
+    <view class='top_date'>
+      <view class='top_d'>3天前</view>
+      <view class='top_a'>暂无回答</view>
+    </view>
+  </view>
+  <view class='answer_con'>
+    <text class='null'>您还没有回答,赶紧来抢沙发吧！</text>
+  </view>
+  <template is="bottomNav" />
+</view>

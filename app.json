@@ -3,8 +3,16 @@
     "pages/index/index",
     "pages/academy/academy",
     "pages/academy/school/school",
+    "pages/academy/articleList/articleList",
     "pages/data/data",
-    "pages/question/question"
+    "pages/question/question",
+    "pages/question/questionList-noA/questionList-noA",
+    "pages/question/questionList/questionList",
+    "pages/question/answerPage/answerPage",
+    "pages/question/replyPage/replyPage",
+    "pages/question/questionBtn/questionBtn",
+    "pages/question/myQuestionList-noA/myQuestionList-noA",
+    "pages/question/otherIndex/otherIndex"
   ],
   "window": {
     "backgroundColor": "#FFF",

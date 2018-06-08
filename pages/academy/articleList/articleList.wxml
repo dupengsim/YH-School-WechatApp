@@ -1,0 +1,41 @@
+<view class='containier'>
+  <view class='article_Title'>
+    <text class='article_name'>
+      各地各高校深入学习贯彻习近平总书记在北京大学考察时重要讲话精神 以青春之我肩负起国家民族的希望
+    </text>
+    <view class='article_intro'>
+      <view class='article_intro_source'>来源：中国传媒大学</view>
+      <view class='article_intro_time'>2018-05-12</view>
+      <view wx:if="{{collected}}" class='article_intro_collect' bindtap='onCollectionTap'>收藏</view>
+      <view wx:else class='article_intro_collect collected' bindtap='onCollectionTap'>已收藏</view>
+    </view>
+    <view class='article_audio'>
+      <image wx:if="{{isPlayingMusic}}" class='audio_btn' src="/image/play.png" bindtap='audioPlay' />
+      <image wx:else class='audio_btn' src='/image/pause.png' bindtap='audioPlay'></image>
+      <audio class='article_Music' src='{{musicSrc}}' id="myAudio" bindtimeupdate="audioPress" bindtimeupdate="funtimeupdate"></audio>
+      <progress class='audio_progress' percent="{{currentProgress}}" stroke-width="6" activeColor = "#28AEEB" backgroundColor="#D8D8D8"/>
+    </view>
+    <view class='progress_Num'>{{currentTime}}/6:41</view>
+  </view>
+  <view class='article_select'>
+    <view class='article_p'>
+      习近平总书记在北京大学考察时的重要讲话，让无数青年心潮澎湃，极大鼓舞了年轻一代为理想而奋斗的信心与决心。
+    </view>
+    <view class='article_p'>习近平总书记在北京大学考察时的重要讲话，让无数青年心潮澎湃，极大鼓舞了年轻一代为理想而奋斗的信心与决心。</view>
+    <view class='article_p'><image class='article_img' src='/image/demo.jpg'></image></view>
+    <view class='article_p'>
+      <view class='article_title'>爱国：忠于祖国，忠于人民</view>
+    </view>
+    <view class='article_p'>习近平总书记指出，“要时时想到国家，处处想到人民，做到‘利于国者爱之，害于国者恶之’。”大家表示，要把自己的理想同祖国的前途、把自己的人生同民族的命运紧密联系在一起。</view>
+    <view class='article_p'>四川大学深入开展“我的中国梦”等主题教育活动，以及“牢记时代使命，书写人生华章”“中华优秀传统文化进校园”系列活动，全方位、多角度引导青年学生把个人理想追求融入国家和民族的事业中。</view>
+  </view>
+  <view class='article_recommend'>
+    <view class='recommend_item'>
+      各地各高校深入学习贯彻习近平总书记在北京大学考察时重要讲话精神 以青春之我肩负起国家民族的希望
+    </view>
+    <view class='recommend_item'>
+      各地各高校深入学习贯彻习近平总书记在北京大学考察时重要讲话精神 以青春之我肩负起国家民族的希望
+    </view>
+  </view>
+
+</view>

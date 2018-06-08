@@ -1,0 +1,64 @@
+<template name="answerCon">
+  <view class='answerItem'>
+    <view class='answerItem_head clearfix'>
+      <view class='head_left'>
+        <image class='head_left_img' src='/image/avatarDemo.png'></image>
+        <view class='head_left_txt'>我是一名播音员</view>
+      </view>
+      <view class='head_right'>
+        <image class='like_icon' src='/image/like.png'></image>
+        <view class='like_num'>8</view>
+      </view>
+    </view>
+    <view class='answer_txt'>生态兴则文明兴，生态衰则文明衰。绵延5000多年的中华文明孕育了丰富的生态文化。党的十八大以来，以习近平同志为核心的党中央提出一系列新理念新思想新战略，形成习近平生态文明思想，为新时代推进生态文明建设提供了重要遵循。</view>
+    <view class='answer_in clearfix'>
+      <view class='answer_date'>22小时前</view>
+      <view class='answer_btn' catchtap='onRevert'>
+        回复 2
+      </view>
+    </view>
+    <view class='revertList {{Onswitch ? "show" : "hide"}}' animation="{{animationData}}">
+      <view class='revertItem'>
+        <view class='revert_Head'>
+          <image class='revert_img' src='/image/avatarDemo.png'></image>
+          <view class='revert_name'>我是一句播音员</view>
+        </view>
+        <view class='revert_txt'>生态兴则文明兴，生态衰则文明衰。绵延5000多年的中华文明孕育了丰富的生态文化。党的十八大以来，以习近平同志为核心的党中央提出一系列新理念新思想新战略，形成习近平生态文明思想，为新时代推进生态文明建设提供了重要遵循。</view>
+        <view class='revert_date'>18小时前</view>
+      </view>
+      <view class='revertItem'>
+        <view class='revert_Head'>
+          <image class='revert_img' src='/image/avatarDemo.png'></image>
+          <view class='revert_name'>我是一句播音员</view>
+        </view>
+        <view class='revert_txt'>生态兴则文明兴，生态衰则文明衰。绵延5000多年的中华文明孕育了丰富的生态文化。党的十八大以来，以习近平同志为核心的党中央提出一系列新理念新思想新战略，形成习近平生态文明思想，为新时代推进生态文明建设提供了重要遵循。</view>
+        <view class='revert_date'>18小时前</view>
+      </view>
+      <view class='wholeBtn'>
+      …
+        <!-- <image src='/image/wholeBtn.png'></image> -->
+      </view>
+      <view class='reverrt_Btn' catchtap='onReply'>点击回复</view>
+    </view>
+  </view>
+  <view class='answerItem'>
+    <view class='answerItem_head clearfix'>
+      <view class='head_left'>
+        <image class='head_left_img' src='/image/avatarDemo.png'></image>
+        <view class='head_left_txt'>我是一名播音员</view>
+      </view>
+      <view class='head_right'>
+        <image class='like_icon' src='/image/like.png'></image>
+        <view class='like_num'>8</view>
+      </view>
+    </view>
+    <view class='answer_txt'>生态兴则文明兴，生态衰则文明衰。绵延5000多年的中华文明孕育了丰富的生态文化。党的十八大以来，以习近平同志为核心的党中央提出一系列新理念新思想新战略，形成习近平生态文明思想，为新时代推进生态文明建设提供了重要遵循。</view>
+    <view class='answer_in clearfix'>
+      <view class='answer_date'>22小时前</view>
+      <view class='answer_btn'>
+        回复 2
+      </view>
+    </view>
+  </view>
+  <view class='answer_more'>没有更多了</view>
+</template>

@@ -1,0 +1,11 @@
+<!--pages/question/questionList-noA/questionList-noA.wxml-->
+<import src="../bottomNav-template/bottomNav-template.wxml" />
+<import src="../questionCon-template/questionCon-template.wxml" />
+
+<view class='questionList'>
+  <template is="questionCon" />
+  <view class='answer_con'>
+    <text class='null'>您还没有回答,赶紧来抢沙发吧！</text>
+  </view>
+  <template is="bottomNav" />
+</view>

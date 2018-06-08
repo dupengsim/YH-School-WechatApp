@@ -1,0 +1,43 @@
+<template name="questionItem">
+  <view class='questionItem'>
+    <view class='item_top'>
+      <view class='item_aa' catchtap='onOtherIndex'>
+        <image class='item_avatar' src='/image/avatarDemo.png'></image>
+        <view class='item_author'>我是一名播音员</view>
+      </view>
+      <view class='item_stick'>
+        <image class='stick_icon' src='/image/stick.png'></image>
+        <view class='stick_txt'>置顶</view>
+      </view>
+    </view>
+    <view class='item_con' catchtap='onQuestionList'>
+      <view class='item_name'>作为播音员日常需要花很多的时间训练？</view>
+      <view class='item_txt'>2018年6月5日，第47个世界环境日。中国将“美丽中国，我是行动者”确立为今年环境日的主题，旨在推动社会各界和公众积极参与生态文明建设，以实实在在的行动共建天蓝、地绿、水清的美丽中国。环境就是民生，青山就是美丽，蓝天也是幸福”。习近平生态文明思想，将如何处理人类生产与自然环境关系的认识论发展到了一个新高度，体现出习近平总书记作为人民领袖的深厚民生情怀和强烈责任担当，为我们坚定不移走生产发展、生活富裕、生态良好的文明发展道路指明了方向。</view>
+      <view class='item_imgs'>
+        <image src='/image/demo.jpg'></image>
+        <image src='/image/demo.jpg'></image>
+        <image src='/image/demo.jpg'></image>
+      </view>
+    </view>
+  </view>
+  <view class='questionItem'>
+    <view class='item_top'>
+      <view class='item_aa' catchtap='onOtherIndex'>
+        <image class='item_avatar' src='/image/avatarDemo.png'></image>
+        <view class='item_author'>我是一名播音员</view>
+      </view>
+      <view class='item_stick'>
+        <image class='stick_icon' src='/image/stick.png'></image>
+        <view class='stick_txt'>置顶</view>
+      </view> 
+    </view>
+    <view class='item_con' catchtap='onQuestionListAnswer'>
+      <view class='item_name'>作为播音员日常需要花很多的时间训练？</view>
+      <view class='item_txt'>2018年6月5日，第47个世界环境日。中国将“美丽中国，我是行动者”确立为今年环境日的主题，旨在推动社会各界和公众积极参与生态文明建设，以实实在在的行动共建天蓝、地绿、水清的美丽中国。环境就是民生，青山就是美丽，蓝天也是幸福”。习近平生态文明思想，将如何处理人类生产与自然环境关系的认识论发展到了一个新高度，体现出习近平总书记作为人民领袖的深厚民生情怀和强烈责任担当，为我们坚定不移走生产发展、生活富裕、生态良好的文明发展道路指明了方向。</view>
+    </view>
+  </view>
+  <view class='question_Btn' catchtap='onQuestionTab'>
+    <view class='btn_icon'>+</view>
+    <view class='btn_txt'>提问</view>
+  </view>
+</template>

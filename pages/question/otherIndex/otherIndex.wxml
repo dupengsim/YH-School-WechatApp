@@ -1,0 +1,90 @@
+<!--pages/question/otherIndex/otherIndex.wxml-->
+<view class='otherIndex'>
+  <view class='otherIntro'>
+    <view class='questionTop'>
+      <image class='myAvatar' src='/image/avatarDemo.png'></image>
+      <text class='myName'>我是一名播音员</text>
+      <view class='like'>
+        <text class='like_num'>12</text>
+        <image class='like_icon' src='/image/likeIcon.png'></image>
+      </view>
+      <view class='fans'>
+        <text class='fans_num'>9</text>
+        <image class='fans_icon' src='/image/fansIcon.png'></image>
+      </view>
+    </view>
+    <view class='otherK'>+ 关注</view>
+  </view>
+  <view class='subNav'>
+    <scroll-view scroll-x="true" class='sub_navbarHd'>
+      <block wx:for="{{otherArr}}">
+        <view data-index="{{index}}" bindtap='onSubNav'>{{item}}</view>
+      </block>
+      <view class='subnav_line' animation="{{sub_animationData}}"></view>
+    </scroll-view>
+  </view>
+  <view class='subNav_con'>
+    <view class='sub_bd {{subCurrentTab == 0 ? "show" : "hide"}}'>
+      <view class='subQuestionNum'>共2个提问</view>
+      <view class='questionList'>
+        <view class='subQuestionItem' catchtap='onMqAnswerNoTap'>
+          <view class='item_Title'>作为播音员。日常需要花很多的时间训练？</view>
+          <view class='item_intro'>
+            <view class='item_date'>5小时前</view>
+            <view class='itemAnswer_num'>0个回答</view>
+          </view>
+        </view>
+        <view class='subQuestionItem' catchtap='onQuestionListAnswer'>
+          <view class='item_Title'>作为播音员。日常需要花很多的时间训练？</view>
+          <view class='item_intro'>
+            <view class='item_date'>5小时前</view>
+            <view class='itemAnswer_num'>0个回答</view>
+          </view>
+        </view>
+      </view>
+      <view class='noMore'>没有更多了</view>
+    </view>
+    <view class='sub_bd {{subCurrentTab == 1 ? "show" : "hide"}}'>
+      <view class='subAnswernNum'>共2个提问</view>
+      <view class='subAnswerList'>
+        <view class='subAnswerItem'>
+          <view class='item_Title'>作为播音员，日常需要花很多的时候训练？</view>
+          <view class='subItem_con'>作为播音员，日常花费多长时间训练啊大约</view>
+          <view class='item_intro'>
+            <view class='item_date'>5小时前</view>
+            <view class='itemAnswer_num'>0个回答</view>
+          </view>
+        </view>
+        <view class='subAnswerItem'>
+          <view class='item_Title'>作为播音员，日常需要花很多的时候训练？</view>
+          <view class='subItem_con'>作为播音员，日常花费多长时间训练啊大约</view>
+          <view class='item_intro'>
+            <view class='item_date'>5小时前</view>
+            <view class='itemAnswer_num'>0个回答</view>
+          </view>
+        </view>
+      </view>
+      <view class='noMore'>没有更多了</view>
+    </view>
+    <view class='sub_bd {{subCurrentTab == 2 ? "show" : "hide"}}'>
+      <view class='subFansnNum'>共2个粉丝</view>
+      <view class='subFansList'>
+        <view class='subFansItem'>
+          <view class='FansHead'>
+            <image src='/image/avatarDemo.png'></image>
+            <text class='fansHead_name'>我是一名播音员</text>
+          </view>
+          <view class='fansKeep'>+ 关注</view>
+        </view>
+        <view class='subFansItem'>
+          <view class='FansHead'>
+            <image src='/image/avatarDemo.png'></image>
+            <text class='fansHead_name'>我是一名播音员</text>
+          </view>
+          <view class='fansKeep'>+ 关注</view>
+        </view>
+      </view>
+      <view class='noMore'>没有更多了</view>
+    </view>
+  </view>
+</view>

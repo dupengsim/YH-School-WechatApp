@@ -67,6 +67,7 @@
   width:258rpx;
   margin-bottom: 2rpx;
   white-space: normal;
+  font-size:20rpx;
 }
 
 .item_con_intro{

@@ -1,0 +1,5 @@
+<!--pages/question/replyPage/replyPage.wxml-->
+<view class='reply_Wrapper'>
+  <textarea class='reply_text' placeholder='你有什么看法？' placeholder-style='replyStyle' maxlength="-1"  focus="true"></textarea>
+  <view class='reply_issue'>发布</view>
+</view>

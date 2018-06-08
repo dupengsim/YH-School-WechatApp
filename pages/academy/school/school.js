@@ -14,7 +14,7 @@ Page({
       "成绩查询",
       "学校信息"
     ],
-    animation:{}
+    animationData:{}
   },
   onArticle:function(event){
     var index = event.target.dataset.index;
@@ -25,12 +25,9 @@ Page({
     });
     animation.left((index * 76) + 'px').step()
     this.setData({
-      animationData: animation.export()
-    })
-    this.setData({
+      animationData: animation.export(),
       currentTab: event.target.dataset.index
-    });
-
+    })
   },
   
   onLoad: function (options) {
